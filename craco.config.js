@@ -101,7 +101,8 @@ module.exports = {
               // Popover background color
               "@popover-background": "@component-background",
               "@popover-customize-border-color": "@border-color-split",
-              "@font-family": "'Noto Sans', sans-serif",
+              "@font-family":
+                "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
               "@code-family":
                 "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace",
               "@text-color": "fade(@black, 85%)",
@@ -128,6 +129,12 @@ module.exports = {
               "@border-radius-base": "2px",
               "@border-radius-sm": "@border-radius-base",
 
+              // control border
+              "@control-border-radius": "@border-radius-base",
+
+              // arrow border
+              "@arrow-border-radius": "2px",
+
               // vertical paddings
               "@padding-lg": "24px", // containers
               "@padding-md": "16px", // small containers and buttons
@@ -146,7 +153,7 @@ module.exports = {
               "@margin-xs": "8px", // small items
               "@margin-xss": "4px", // more small
 
-              // Height rules
+              // height rules
               "@height-base": "32px",
               "@height-lg": "40px",
               "@height-sm": "24px",
@@ -213,15 +220,15 @@ module.exports = {
               "@shadow-color-inverse": "@component-background",
               "@box-shadow-base": "@shadow-2",
               "@shadow-1-up":
-                "0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05), 0 -12px 48px 16px rgba(0, 0, 0, 0.03)",
+                "0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05),  0 -12px 48px 16px rgba(0, 0, 0, 0.03)",
               "@shadow-1-down":
-                "0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03)",
+                "0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05),  0 12px 48px 16px rgba(0, 0, 0, 0.03)",
               "@shadow-1-left":
-                "-6px 0 16px -8px rgba(0, 0, 0, 0.08), -9px 0 28px 0 rgba(0, 0, 0, 0.05), -12px 0 48px 16px rgba(0, 0, 0, 0.03)",
+                "-6px 0 16px -8px rgba(0, 0, 0, 0.08), -9px 0 28px 0 rgba(0, 0, 0, 0.05),  -12px 0 48px 16px rgba(0, 0, 0, 0.03)",
               "@shadow-1-right":
-                "6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05), 12px 0 48px 16px rgba(0, 0, 0, 0.03)",
+                "6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05),  12px 0 48px 16px rgba(0, 0, 0, 0.03)",
               "@shadow-2":
-                "0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05)",
+                "0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),  0 9px 28px 8px rgba(0, 0, 0, 0.05)",
 
               // Buttons
               "@btn-font-weight": "400",
@@ -410,14 +417,14 @@ module.exports = {
               "@zindex-image": "1080",
 
               // Animation
-              "@animation-duration-slow": "0.3s; // Moda",
+              "@animation-duration-slow": "0.3s", // Modal
               "@animation-duration-base": "0.2s",
-              "@animation-duration-fast": "0.1s; // Toolti",
+              "@animation-duration-fast": "0.1s", // Tooltip
 
-              // CollapsePanel
+              //CollapsePanel
               "@collapse-panel-border-radius": "@border-radius-base",
 
-              // Dropdown
+              //Dropdown
               "@dropdown-menu-bg": "@component-background",
               "@dropdown-vertical-padding": "5px",
               "@dropdown-edge-child-vertical-padding": "4px",
@@ -543,6 +550,7 @@ module.exports = {
               "@tooltip-distance": "@tooltip-arrow-width - 1px + 4px",
               // Tooltip arrow color
               "@tooltip-arrow-color": "@tooltip-bg",
+              "@tooltip-border-radius": "@border-radius-base",
 
               // Popover
               // ---
@@ -601,7 +609,6 @@ module.exports = {
               "@progress-text-font-size": "1em",
               "@progress-text-color": "@text-color", // This is for circle text color, should be renamed better
               "@progress-circle-text-font-size": "1em",
-
               // Menu
               // ---
               "@menu-inline-toplevel-item-height": "40px",
@@ -629,7 +636,7 @@ module.exports = {
               "@menu-icon-size-lg": "@font-size-lg",
               "@menu-item-group-title-font-size": "@menu-item-font-size",
 
-              // Dark Theme
+              // dark theme
               "@menu-dark-color": "@text-color-secondary-dark",
               "@menu-dark-danger-color": "@error-color",
               "@menu-dark-bg": "@layout-header-background",
@@ -641,7 +648,6 @@ module.exports = {
               "@menu-dark-selected-item-icon-color": "@white",
               "@menu-dark-selected-item-text-color": "@white",
               "@menu-dark-item-hover-bg": "transparent",
-
               // Spin
               // ---
               "@spin-dot-size-sm": "14px",
@@ -678,7 +684,8 @@ module.exports = {
               "@table-font-size-sm": "@table-font-size",
               "@table-header-cell-split-color": "rgba(0, 0, 0, 0.06)",
               // Sorter
-              // Legacy- `table-header-sort-active-bg` is used for hover not real active
+              "// Legacy":
+                "`table-header-sort-active-bg` is used for hover not real activ",
               "@table-header-sort-active-bg": "rgba(0, 0, 0, 0.04)",
               "@table-fixed-header-sort-active-bg": "hsv(0, 0, 96%)",
 
@@ -694,6 +701,7 @@ module.exports = {
 
               // Tag
               // --
+              "@tag-border-radius": "@border-radius-base",
               "@tag-default-bg": "@background-color-light",
               "@tag-default-color": "@text-color",
               "@tag-font-size": "@font-size-sm",
@@ -893,7 +901,7 @@ module.exports = {
               "@breadcrumb-font-size": "@font-size-base",
               "@breadcrumb-icon-font-size": "@font-size-base",
               "@breadcrumb-link-color": "@text-color-secondary",
-              "@breadcrumb-link-color-hover": "@primary-5",
+              "@breadcrumb-link-color-hover": "@text-color",
               "@breadcrumb-separator-color": "@text-color-secondary",
               "@breadcrumb-separator-margin": "0 @padding-xs",
 
@@ -963,7 +971,6 @@ module.exports = {
               // ---
               "@message-notice-content-padding": "10px 16px",
               "@message-notice-content-bg": "@component-background",
-              
               // Motion
               // ---
               "@wave-animation-width": "6px",
@@ -1103,6 +1110,14 @@ module.exports = {
               "@image-preview-operation-color": "@text-color-dark",
               "@image-preview-operation-disabled-color":
                 "fade(@image-preview-operation-color, 25%)",
+
+              // Segmented
+              // ---
+              "@segmented-bg": "fade(@black, 4%)",
+              "@segmented-hover-bg": "fade(@black, 6%)",
+              "@segmented-selected-bg": "@white",
+              "@segmented-label-color": "fade(@black, 65%)",
+              "@segmented-label-hover-color": "#262626",
             },
             javascriptEnabled: true,
           },
